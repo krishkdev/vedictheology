@@ -1,0 +1,9 @@
+.header {
+    position: fixed;
+    overflow: hidden;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 5px solid rgb(110, 110, 110);
+}
