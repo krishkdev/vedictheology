@@ -1,0 +1,46 @@
+.container {
+    padding: 1.5rem ;
+    background-color: #111d2c;
+    color: aliceblue;
+}
+h1{
+    color: aliceblue;
+}
+b {
+    color: yellow;
+}
+li {
+    list-style: none;
+    display: block;
+    margin-bottom: 1rem;
+}
+.content {
+    display: flex;
+    padding: 1.5rem;
+    align-self: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid thistle;
+}
+
+.content1 {
+    padding: 1.5rem;
+    flex:1;
+}
+.content2 {
+    padding: 1.5rem;
+    flex:1;
+}
+.content3 {
+    padding: 1.5rem;
+    flex:2;
+}
+.foo { 
+    padding: 1rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 770px) {
+    .content {
+        flex-wrap: wrap;
+    }
+  }
