@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/vedictheology/static/css/main.3dedce71.chunk.css",
+    "main.js": "/vedictheology/static/js/main.0ded2a8e.chunk.js",
+    "main.js.map": "/vedictheology/static/js/main.0ded2a8e.chunk.js.map",
+    "runtime-main.js": "/vedictheology/static/js/runtime-main.ca17873b.js",
+    "runtime-main.js.map": "/vedictheology/static/js/runtime-main.ca17873b.js.map",
+    "static/css/2.97ca6098.chunk.css": "/vedictheology/static/css/2.97ca6098.chunk.css",
+    "static/js/2.0689fdf2.chunk.js": "/vedictheology/static/js/2.0689fdf2.chunk.js",
+    "static/js/2.0689fdf2.chunk.js.map": "/vedictheology/static/js/2.0689fdf2.chunk.js.map",
+    "index.html": "/vedictheology/index.html",
+    "precache-manifest.dbbe7f8b23955ed23f39d7e66fb08571.js": "/vedictheology/precache-manifest.dbbe7f8b23955ed23f39d7e66fb08571.js",
+    "service-worker.js": "/vedictheology/service-worker.js",
+    "static/css/2.97ca6098.chunk.css.map": "/vedictheology/static/css/2.97ca6098.chunk.css.map",
+    "static/css/main.3dedce71.chunk.css.map": "/vedictheology/static/css/main.3dedce71.chunk.css.map",
+    "static/js/2.0689fdf2.chunk.js.LICENSE.txt": "/vedictheology/static/js/2.0689fdf2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca17873b.js",
+    "static/css/2.97ca6098.chunk.css",
+    "static/js/2.0689fdf2.chunk.js",
+    "static/css/main.3dedce71.chunk.css",
+    "static/js/main.0ded2a8e.chunk.js"
+  ]
+}
