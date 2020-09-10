@@ -1,15 +1,17 @@
 @import '~antd/dist/antd.css';
 
-* {
-    margin: 0;
-    padding: 0;
-}
+
 .layout {
+    background-color: rgba(255,140,0,0.2);
     position: relative;
-    top: 4.8rem;
+    top: 5.6rem;
 }
 @media only screen and (max-width: 770px) {
     .layout {
         top: 7.3rem;
     }
+  }
+
+  :root {
+      --primary: #4B0082;
   }

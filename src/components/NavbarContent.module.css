@@ -1,9 +1,83 @@
 .header {
+    display: flex;
     position: fixed;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 100;
     top: 0;
+    padding-bottom: 2rem;
     width: 100%;
-    background-color: #fff;
-    border-bottom: 5px solid rgb(110, 110, 110);
+    background-color:rgb(255,159,0);
+}
+.heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.subs {
+    font-weight: normal;
+    font-size: 1rem;
+    position: absolute;
+    top: 4.2rem;
+    left: 5.8rem;
+}
+.navs {
+    display: inline;
+    position: absolute;
+    right: 2.5rem;
+    top: 2.5rem;
+}
+.btn {
+    margin-top: 0.2rem;
+    margin-left: 1rem;
+    background-color: rgba(43,1,73,0.8);
+    border-color: rgba(43,1,73,0.8);
+    color: #fff;
+}
+
+.btn:hover {
+    color: black;
+    background-color: orange;
+    border-color: orange;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+.links:hover {
+    color:rgb(110, 110, 110);
+}
+.menu {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    background: orange;
+    border-color: orange;
+    display: none;
+}
+
+@media only screen and (max-width: 770px) {
+    .subs {
+        display: none;
+    }
+    .heading{
+        position: absolute;
+        top: 2rem;
+    }
+    .btn {
+        display: none;
+    }
+    .subs {
+        position: absolute;
+        top: 3rem;
+        right: 0.3rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .menu {
+        display: inline;
+    }
+    .overlay {
+        color:orangered;
+    }
+    
 }
