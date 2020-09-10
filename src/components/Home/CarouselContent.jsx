@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React from "react";
 import { Carousel,Image, Button } from "antd";
 import { Link } from "react-router-dom"; 
 import Styles from './CarouselContent.module.css';
@@ -13,7 +13,7 @@ const CarouselContent = () => {
       <div className={Styles.centered}>
         <h1>Vedictheology</h1>
         <p>Help people affected by COVID-19 by donating to our trust</p>
-        <Button className={Styles.btn} onClick={handleClick} >Donate</Button>
+        <Link to='/donate'><Button className={Styles.btn} onClick={handleClick} >Donate</Button></Link>
       </div>
 
       <Carousel autoplay dotPosition="top">

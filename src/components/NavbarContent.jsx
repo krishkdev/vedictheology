@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Button, PageHeader, Tooltip, Avatar, Menu, Dropdown} from "antd";
-import { MenuOutlined, CloseOutlined } from '@ant-design/icons'
+import { MenuOutlined } from '@ant-design/icons'
 import Styles from './NavbarContent.module.css';
 import { Link } from "react-router-dom";
 
@@ -23,31 +23,27 @@ const NavLinks = [
   {
     id : 4,
     title : 'Contact us',
-    path : null
+    path : '/contact'
   }
 ];
 
 const menu = (
-  <Menu style={{ width: 256, textAlign:"center",background:"orange",transition:"ease-out" }}>
+  <Menu style={{ width: 256, textAlign:"center",background:"orange"}}>
     {NavLinks.map((e) => {
       return (
-        <>
-        <Menu.Item key={e.id}>
+        <div  key={e.id+10}>
+        <Menu.Item>
         <Link to={e.path}>
         <h3>{e.title}</h3>
         </Link>
         </Menu.Item>
       <Menu.Divider />
-      </>
+      </div>
       )})}
   </Menu>
 );
 
 const NavBar = () => {
-  const [clicked, setClicked] = useState(false);
-  const handleClick = () => {
-    
-  }
   return (
     <PageHeader className={Styles.header} >
         <Link to="/" className={Styles.links}>
@@ -56,13 +52,11 @@ const NavBar = () => {
         <span className={Styles.subs}>Sri Shanthibini Gurukulam Trust</span>
         </Link>
         <div className={Styles.navs}>
-          {NavLinks.map((e) => {return <Link to={e.path}><Button key={e.id} color="#800080" className={Styles.btn} >{e.title}</Button></Link>} )}
+          {NavLinks.map((e) => {return <Link key={e.id} to={e.path}><Button color="#800080" className={Styles.btn} >{e.title}</Button></Link>} )}
 
            <Dropdown className={Styles.menu} overlay={menu} trigger={['click']}>
             <MenuOutlined />
           </Dropdown>
-          {/* <MenuOutlined  />
-          <CloseOutlined /> */}
           </div>
       </PageHeader>
 

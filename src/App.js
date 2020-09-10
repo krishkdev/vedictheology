@@ -8,6 +8,7 @@ import HomePage from "./components/Home/HomePage";
 import GalleryPage from "./components/Gallery/GalleryPage";
 import AboutPage from "./components/About/AboutPage";
 import DonatePage from "./components/Donate/DonatePage";
+import ContactPage from "./components/contact/ContactPage";
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
         <Route path="/gallery" component={GalleryPage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/doante" component={DonatePage} />
+        <Route path="/contact" component={ContactPage} />
         </Switch>
         <FooContent />
       </Layout>
